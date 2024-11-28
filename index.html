@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>To-Do List</title>
+</head>
+<body>
+    <div class="container mt-5">
+    <div class="post">
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">To-Do Name</label>
+            <input type="text" class="form-control tskname" id="exampleFormControlInput1" placeholder="write task name">
+          </div>
+        <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">To-Do Tasks</label>
+            <textarea class="form-control tsktasks" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div> 
+        <div class="d-grid col-6 mx-0">
+            <button type="button" class="btn btn-primary postBtn">Add</button>
+            <button type="button" class="btn btn-primary postBtn updtBtn">Update</button>
+        </div>
+        <div class="error mt-3"></div>
+    </div>
+    <div class="d-flex flex-wrap gap-3 allPost">
+        <!-- <div class="card mt-3" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <button href="#" class="btn btn-success">Edit</button>
+                <button href="#" class="btn btn-danger">Delete</button>
+            </div>
+        </div> -->
+    </div>
+    </div>
+
+
+
+    <script src="./js/script.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
