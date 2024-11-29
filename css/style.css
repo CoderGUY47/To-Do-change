@@ -75,3 +75,11 @@ label
 {
     background: rgb(249, 249, 249);
 }
+.playBtn
+{
+    display: none;
+}
+.resetBtn
+{
+    display: none;
+}
