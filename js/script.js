@@ -1,13 +1,3 @@
-// In your main JavaScript file
-// Remove unnecessary code and imports
-
-const script = document.createElement('script');
-script.src = './js/guessScript.js'; // Adjust the path
-document.body.appendChild(script);
-
-// Rest of your code remains the same
-
-
 let allPost = document.querySelector(".allPost");
 let tskname = document.querySelector(".tskname");
 let tsktasks = document.querySelector(".tsktasks");
@@ -19,7 +9,7 @@ let inStore;
 
 function isNumber(value) 
 {
-    return !isNaN(value) && value.trim() !== "";
+    return !isNaN(value) && value !== "";
 }
 
 postBtn.addEventListener("click",function()
