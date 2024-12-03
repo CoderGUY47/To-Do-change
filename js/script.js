@@ -7,10 +7,6 @@ let error = document.querySelector(".error");
 let arr = [];
 let inStore;
 
-function isNumber(value) 
-{
-    return !isNaN(value) && value !== "";
-}
 
 postBtn.addEventListener("click",function()
 {
@@ -59,7 +55,7 @@ function display(){
     {
         let editBtnTxt="Edit";
         let cardColor = "";
-        if(isNumber(item.name))
+        if(!isNaN(Number(item.name)) && item.value !== "")
         {
             editBtnTxt="Play"
             cardColor="bg-num"
